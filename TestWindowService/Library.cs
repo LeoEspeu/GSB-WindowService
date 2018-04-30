@@ -9,6 +9,10 @@ namespace TestWindowService
 {
     class Library
     {
+        /// <summary>
+        /// Si une exception est déclenchée , on l'écrit dans le journal de log.
+        /// </summary>
+        /// <param name="ex"></param>
         public static void WriteErrorLog(Exception ex)
         {
             StreamWriter sw = null;
@@ -25,6 +29,10 @@ namespace TestWindowService
             }
         }
 
+        /// <summary>
+        /// Fonction permettant de remplir le journal de log.
+        /// </summary>
+        /// <param name="Message">Message à inséré dans le journal de log</param>
         public static void WriteErrorLog(String Message)
         {
             StreamWriter sw = null;
