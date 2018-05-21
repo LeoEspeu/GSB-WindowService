@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace GSB_Csharp
 {
+    /// <summary>
+    /// Classe permet de réaliser de multiples opérations sur les dates
+    /// </summary>
     public abstract class GestionDates
     {
         /// <summary>

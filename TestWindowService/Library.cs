@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace TestWindowService
 {
+    /// <summary>
+    /// Classe permettant de créer et mettre à jour un journal de log sur les opérations réalisées par le service
+    /// </summary>
     class Library
     {
         /// <summary>

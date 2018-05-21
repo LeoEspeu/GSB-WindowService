@@ -34,7 +34,11 @@ namespace TestWindowService
             Library.WriteErrorLog("Test Window service started");
         }
 
-        //Evenement Tick du timer qui fait à intervalle de temps régulier ,les mises à jour dans la base GSB
+        /// <summary>
+        /// //Evenement Tick du timer qui fait à intervalle de temps régulier ,les mises à jour dans la base GSB
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void timer1_Tick(object sender,ElapsedEventArgs e)
         {
             TraitementBDD connect = new TraitementBDD("127.0.0.1", "gsb_frais", "root", "");
@@ -60,7 +64,8 @@ namespace TestWindowService
 
             connect.fermeture();
 
-            Library.WriteErrorLog("Opération réussitre");
+            Library.WriteErrorLog("Opération réussite");
+            connect.Dispose();
         }
 
         /// <summary>
